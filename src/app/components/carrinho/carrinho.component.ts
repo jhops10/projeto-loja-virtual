@@ -20,6 +20,7 @@ export class CarrinhoComponent implements OnInit {
 
   ngOnInit(): void {
     this.produtosSelecionados = this.carrinhoService.getProdutos();
+    console.log(this.produtosSelecionados);
   }
 
   calcularTotal(): number {
