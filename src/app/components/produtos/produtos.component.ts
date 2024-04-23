@@ -16,23 +16,23 @@ export class ProdutosComponent implements OnInit {
   produtos: IProduto[] = [
     new Produto(
       1,
-      'Iphone 14',
-      'IPhone 14 Pro. Câmera grande-angular de 48 MP para capturar detalhes impressionantes.',
-      'https://cdn.awsli.com.br/600x700/1861/1861669/produto/228944590200c04851c.jpg',
-      6200
+      'Galaxy Watch4 BT',
+      'O Galaxy Watch4 BT da Samsung é o smartwatch que oferece o mais completo conjunto de soluções.',
+      'https://a-static.mlcdn.com.br/280x210/smartwatch-samsung-galaxy-watch4-bt-preto-44mm-16gb/magazineluiza/231240800/0c3a191f2cc919530eb44126d69682b8.jpg',
+      1400
     ),
     new Produto(
       2,
-      'Samsung S21',
-      'As funcionalidades oferecidas pelo Samsung Galaxy S21 são muitas e inovadoras.',
-      'https://i.zst.com.br/thumbs/12/2a/32/-731222761.jpg',
+      'Galaxy Active2',
+      'Se você pensa que o smartwatch é apenas um acessório que marca as horas, precisa conhecer Samsung Galaxy Watch Active2.',
+      'https://a-static.mlcdn.com.br/280x210/smartwatch-samsung-galaxy-watch-active2-preto-44mm-15gb/magazineluiza/226484600/e8ebc1e54489e50ca33b2bbde78ea57e.jpg',
       4100
     ),
     new Produto(
       3,
       'Galaxy Watch',
       'O Galaxy Watch6 LTE é o smartwatch que oferece o mais completo conjunto de funções.',
-      'https://m.media-amazon.com/images/I/61vvtvy5WOL._AC_UF1000,1000_QL80_.jpg',
+      'https://a-static.mlcdn.com.br/280x210/smartwatch-samsung-galaxy-watch4-bt-40mm-preto-16gb/magazineluiza/231241100/085a1da124806f964baa1f4b8452bf28.jpg',
       900
     ),
   ];

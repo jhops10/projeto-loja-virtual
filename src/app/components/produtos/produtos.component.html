@@ -6,30 +6,36 @@
     </p>
   </div>
 
-  <h6>Bem-vindo: Usuário</h6>
+  <h6>Bem-vindo: {{ usuario.nome }}</h6>
 
-  <div class="row justify-content-center">
-    <div class="col-md-4 mb-4">
+  <div class="row justify-content-center" *ngIf="!exibirCarrinho">
+    <div class="col-md-4 mb-4" *ngFor="let produto of produtos">
       <div class="card h-100">
-        <img alt="Imagem do Produto" class="card-img-top" />
+        <img
+          [src]="produto.imagem"
+          alt="Imagem do Produto"
+          class="card-img-top"
+        />
         <div class="card-body">
-          <h5 class="card-title">Title</h5>
-          <p class="card-text">Parágrafo</p>
-          <h6 class="card-text text-right">Preço:</h6>
+          <h5 class="card-title">{{ produto.nome }}</h5>
+          <p class="card-text">{{ produto.descricao }}</p>
+          <h6 class="card-text text-right">
+            Preço: {{ produto.preco | currency : "BRL" }}
+          </h6>
         </div>
         <div class="card-footer">
-          <a href="#" class="btn btn-warning">Adicionar ao Carrinho</a>
+          <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
         </div>
       </div>
     </div>
   </div>
 
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" *ngIf="!exibirCarrinho">
       <!-- Código para listar produtos... -->
       <button class="btn btn-success mt-2 mb-4 float-right">Comprar</button>
     </div>
 
-    <!-- Inserir componente Carrinho Aqui -->
+    <!-- Inserir Componente Carrinho Aqui -->
   </div>
 </div>
