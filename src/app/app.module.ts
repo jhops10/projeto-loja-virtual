@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './components/home/home.component';
 import { ProdutosComponent } from './components/produtos/produtos.component';
+import { CarrinhoComponent } from './components/carrinho/carrinho.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, ProdutosComponent],
+  declarations: [AppComponent, HomeComponent, ProdutosComponent, CarrinhoComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
